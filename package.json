@@ -1,0 +1,50 @@
+{
+    "name": "vscode-eclipse-new-java-project",
+    "displayName": "vscode-eclipse-new-java-project",
+    "description": "Emulates the new project button in eclipse to setup a Java project (including the classpath and .project files).",
+    "version": "1.0.0",
+    "publisher": "mellena1",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "homepage": "https://github.com/mellena1/vscode-eclipse-new-java-project",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mellena1/vscode-eclipse-new-java-project.git"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.NewJavaProject"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.NewJavaProject",
+                "title": "New Java Project"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42",
+        "@types/rimraf": "^2.0.2",
+        "@types/xmlbuilder": "0.0.32",
+        "rimraf": "^2.6.2"
+    },
+    "dependencies": {
+        "xmlbuilder": "^10.0.0"
+    }
+}
