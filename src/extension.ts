@@ -68,7 +68,6 @@ export async function getWorkspaceRoot(folders: vscode.WorkspaceFolder[], multi:
     /*
      * getWorkspaceRoot
      * Figures out which folder to make the project in.
-     * Calls promptForFolder if there are multiple folders in the workspace.
      */
     if (multi) {  // Multiple folders in workspace
         if (baseName === "" || baseName === undefined) {  // Nothing entered
@@ -197,6 +196,14 @@ export async function command(context: vscode.ExtensionContext) {
     
     // Prompt for project name and create
     const projectName = await promptForProjectName();
+    if (projectName === undefined) {
+        return;
+    } else if (projectName === "" || projectName !== path.basename(projectName)) {
+        await vscode.window.showErrorMessage(
+            'Please enter a valid project name.'
+        );
+        return;
+    }
     // Prompt for Java Verison
     const javaVersion = await promptForJavaVersion();
     // Validate javaVersion

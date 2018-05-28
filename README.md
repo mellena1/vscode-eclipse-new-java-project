@@ -6,6 +6,7 @@ A VSCode extension for people who don't want to use maven or graddle project set
 
 * Sets up an eclipse-like project folder for java projects.
 * Classpath is picked up by the [Java Extension Pack extension](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) to enable inner-project class definition go-tos, docs, etc.
+
 ![Example](https://media.giphy.com/media/SKdBaI1lUxzMSwaEGl/giphy.gif)
 
 ## Usage
