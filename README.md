@@ -10,7 +10,7 @@ A VSCode extension for people who don't want to use maven or graddle project set
 
 ## Usage
 
-* Press `Cmd+Shift+P`(Mac) or `Ctrl+Shift+P`(Windows) and type `Java New Project` and hit enter.
+* Press `Cmd+Shift+P`(Mac) or `Ctrl+Shift+P`(Windows) and type `New Java Project` and hit enter.
 * It will prompt for a project name and the Eclipse java build tool to use.
 
 ## Requirements

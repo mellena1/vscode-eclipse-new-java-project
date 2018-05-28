@@ -9,7 +9,7 @@
     },
     "license": "SEE LICENSE IN LICENSE",
     "engines": {
-        "vscode": "^1.23.0"
+        "vscode": "^1.22.1"
     },
     "icon": "images/icon.png",
     "homepage": "https://github.com/mellena1/vscode-eclipse-new-java-project",
