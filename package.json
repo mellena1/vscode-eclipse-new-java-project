@@ -1,17 +1,26 @@
 {
-    "name": "vscode-eclipse-new-java-project",
-    "displayName": "vscode-eclipse-new-java-project",
+    "name": "eclipse-new-java-project",
+    "displayName": "Eclipse New Java Project",
     "description": "Emulates the new project button in eclipse to setup a Java project (including the classpath and .project files).",
     "version": "1.0.0",
     "publisher": "mellena1",
+    "license": "SEE LICENSE IN ./LICENSE",
     "engines": {
         "vscode": "^1.23.0"
     },
+    "icon": "images/icon.png",
     "homepage": "https://github.com/mellena1/vscode-eclipse-new-java-project",
     "repository": {
         "type": "git",
         "url": "https://github.com/mellena1/vscode-eclipse-new-java-project.git"
     },
+    "bugs": {
+        "url": "https://github.com/mellena1/vscode-eclipse-new-java-project/issues"
+    },
+    "keywords": [
+        "java",
+        "eclipse"
+    ],
     "categories": [
         "Other"
     ],

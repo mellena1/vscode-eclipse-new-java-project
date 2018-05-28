@@ -8,6 +8,13 @@ import * as fs from 'fs';
 import * as newJavaProject from '../extension';
 import * as rmrf from 'rimraf';
 
+
+function rmfolder(folder: string) {
+  if (fs.existsSync(folder)) {
+    rmrf(folder, function () {});
+  }
+}
+
 suite("Extension Tests", function () {
 
     test("createProjectFile", function() {
@@ -46,14 +53,14 @@ suite("Extension Tests", function () {
     });
 
     test("createProjectFolder", function() {
-      if (fs.existsSync('/tmp/Test-Project')) {
-        rmrf('/tmp/Test-Project', function () {});
-      }
+      rmfolder('/tmp/Test-Project');
+
       newJavaProject.createProjectFolder('/tmp', 'Test-Project','JavaSE-10');
       assert.equal(fs.existsSync('/tmp/Test-Project'), true);
 
       const expected = ['src', 'bin', '.classpath', '.project'];
       const actual = fs.readdirSync('/tmp/Test-Project');
+      rmfolder('/tmp/Test-Project'); // cleanup
       assert.deepEqual(actual.sort(), expected.sort());
   });
 });
