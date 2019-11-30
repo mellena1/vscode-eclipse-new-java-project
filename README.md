@@ -16,7 +16,7 @@ A VSCode extension for people who don't want to use maven or graddle project set
 
 ## Requirements
 
-* None that I know of yet. It may need the eclipse build tools, but I have not been able to determine whether you do or not.
+* None that I know of yet. It may need the eclipse build tools, but I have not been able to determine whether you do or not. (Pretty sure you don't)
 
 ## Known Issues
 
@@ -24,9 +24,3 @@ A VSCode extension for people who don't want to use maven or graddle project set
 
 ## Contributing
 Feel free to fork and PR! This is my first typescript or javascript project, so if there are any faux pas, feel free to fix them.
-
-## Release Notes
-
-### 1.0.0
-
-Initial release 

@@ -2,7 +2,7 @@
     "name": "eclipse-new-java-project",
     "displayName": "Eclipse New Java Project",
     "description": "Emulates the new project button in eclipse to setup a Java project (including the classpath and .project files).",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "mellena1",
     "author": {
         "name": "Andrew Mellen"
@@ -47,16 +47,16 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
-        "tslint": "^5.8.0",
-        "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42",
-        "@types/rimraf": "^2.0.2",
+        "@types/node": "^7.10.9",
+        "@types/rimraf": "^2.0.3",
         "@types/xmlbuilder": "0.0.32",
-        "rimraf": "^2.6.2"
+        "rimraf": "^2.7.1",
+        "tslint": "^5.20.1",
+        "typescript": "^2.9.2",
+        "vscode": "^1.1.36"
     },
     "dependencies": {
-        "xmlbuilder": "^10.0.0"
+        "xmlbuilder": "^10.1.1"
     }
 }
