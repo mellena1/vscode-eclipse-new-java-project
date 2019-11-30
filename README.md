@@ -24,3 +24,5 @@ A VSCode extension for people who don't want to use maven or graddle project set
 
 ## Contributing
 Feel free to fork and PR! This is my first typescript or javascript project, so if there are any faux pas, feel free to fix them.
+
+## [Changelog](CHANGELOG.md)
